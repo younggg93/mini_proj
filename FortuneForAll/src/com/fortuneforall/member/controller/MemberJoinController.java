@@ -23,8 +23,8 @@ public class MemberJoinController extends HttpServlet{
 		String name = request.getParameter("userName");
 		String name = request.getParameter("userName");
 		MemberDAO dao = new MemberDAO();
-		request.getAttribute(arg0)
-		dao.join(user)
+		request.getAttribute(arg0);
+		dao.join(user);
 	}
 
 }
