@@ -1,0 +1,104 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewpoint" content="width=device-width", initial-sacle="1">
+<link rel="stylesheet" href="../../css/bootstrap.css">
+<title>운세 프로젝트</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="../common/main.html">ForfuneForAll</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../common/main.html">Home</a></li>
+      <li><a href="#">자유 게시판</a></li>
+      <li><a href="#">술 후기 게시판</a></li>
+      <li><a href="#">술 안주 게시판</a></li>
+      <li><a href="#">술집 후기 게시판</a></li>
+      <li><a href="#">운세 후기 게시판</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="join.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+   <div class="container">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+         <div class="jumbotron" style="padding-top: 20px;">
+         
+            	<form action="/FortuneForAll/com.fortuneforall.member.controller/MemberJoinController">
+	               <h3 style="text-align: center;">회원가입 화면</h3>
+	               <div class="form-group">
+	                 <input type="text" class="form-control" placeholder="아이디"  name="userID" maxlength="20">
+	               </div>
+	               
+	               <div class="form-group">
+	                 <input type="password" class="form-control" placeholder="비밀번호"  name="userPassword" maxlength="20">
+	               </div>
+	               
+	               <div class="form-group">
+	                 <input type="text" class="form-control" placeholder="이름"  name="userName" maxlength="20">
+	               </div>
+	               
+	               
+	               <div class="form-group">
+	                 <input type="email" class="form-control" placeholder="이메일"  name="userEmail" maxlength="20">
+	               </div>
+	               
+	               <div class="form-group">
+	   			            질문 : 
+	               <select name="send"> 
+    					<option value="q1" >고향은 어디닝</option>
+   						<option value="q2">좌우명이 뭐닝</option>
+				   </select>
+	               </div>	
+	               
+	               <div class="form-group">
+	                 <input type="text" class="form-control" placeholder="응답"  name="userAnswer" maxlength="20">
+	               </div>
+	                <div class="form-group" style="text-align: center;">
+	                   <div class="btn-group" data-toggle="buttons"> 
+	                      <lable class="btn btn-primary active">
+	                         <input type="radio" name="userGender" autocomplete="off" value="남자" checked>남자
+	                      </lable>
+	                      <lable class="btn btn-primary">
+	                         <input type="radio" name="userGender" autocomplete="off" value="여자" checked>여자
+	                      </lable>
+	                   </div>
+	               </div>
+	               
+	               <div class="form-group">
+	               <select name="send"> 
+    					<option value="1">양력</option>
+   						<option value="2">음력 양달</option>
+   						<option value="3">음력 평달</option>
+				   </select>
+	               </div>
+	               <div class="form-group">
+	               	시간 : 
+	               <select name="send"> 
+    					<option value="자">자</option>
+   						<option value="축">축</option>
+   						<option value="평달">음력 평달</option>
+				   </select>
+	               </div>
+	               
+	               <input type="date" value="2017-12-13" min="1980-01-01" max="2017-12-31">
+	               <br><br>
+	               
+	               
+               <input type="submit" class="btn btn-primary form-control" value="회원가입">
+               </form>
+            </form>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
